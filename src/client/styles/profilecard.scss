@@ -1,0 +1,27 @@
+@use '@/app/styles/globals/stroke.scss' as *;
+
+.profile-card {
+  width: 28.1667rem;
+  height: 45.5000rem; 
+  background-color: var(--bg);
+  padding: 0.8333rem;
+  box-sizing: border-box;
+
+  @include stroke(var(--gradient-stroke), 2px, var(--bg), 9px);
+  &__avatar {
+    width: 26.5000rem;
+    height: 28.9167rem;
+    @include stroke(var(--gradient-stroke-avatar), 2px, var(--bg), 9px);
+    box-sizing: border-box;
+  }
+  &__field {
+    display: flex;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    &-label {
+      width: 100%; 
+      height: 3.5833rem; 
+      display: flex;
+    }
+  }
+}

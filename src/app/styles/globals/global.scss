@@ -1,0 +1,20 @@
+:root {
+  --bg: #1A1D1A;
+  --bg--image: url('/ui/filter.png');
+  
+  //widths
+  --max-width-1: 99.0000rem; 
+
+  //padding
+  --padding-1: 30.5000rem;
+
+  //gradients
+  --gradient-stroke: linear-gradient(180deg, #232623 0%, #272A27 100%);
+  --gradient-stroke-avatar: linear-gradient(180deg, #2D302D, #272A27); 
+  --gradient-stroke-button: linear-gradient(180deg, #879491, #BDC0BD); 
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+}
