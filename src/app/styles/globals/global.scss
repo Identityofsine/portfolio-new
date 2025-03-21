@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --bg: #1A1D1A;
   --bg--image: url('/ui/filter.png');
@@ -11,7 +12,10 @@
   //gradients
   --gradient-stroke: linear-gradient(180deg, #232623 0%, #272A27 100%);
   --gradient-stroke-avatar: linear-gradient(180deg, #2D302D, #272A27); 
-  --gradient-stroke-button: linear-gradient(180deg, #879491, #BDC0BD); 
+  --gradient-stroke-button: linear-gradient(270deg, #879491, #BDC0BD); 
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
 }
 
 body {
