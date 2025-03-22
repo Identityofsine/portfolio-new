@@ -21,6 +21,7 @@
   --gradient-stroke-avatar: linear-gradient(180deg, #2D302D, #272A27); 
   --gradient-stroke-button: linear-gradient(270deg, #879491, #BDC0BD); 
   --gradient-footer-bg: linear-gradient(180deg, #1A1D1A 9%, #000000 23%);
+  --gradient-divider: linear-gradient(90deg, #00000000 5%, #5A5A5A 25%, #282A28 76%, #00000000 95%);
 
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
@@ -29,8 +30,8 @@
 body {
   background-color: var(--bg);
   color: white;
-  max-width: 1920px;
-  margin: 0 auto;
+  //max-width: 1920px;
+  //margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {

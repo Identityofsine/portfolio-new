@@ -5,13 +5,18 @@
   height: 100%;
   overflow: hidden;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   width:100%;
+
+  &__wrapper {
+    margin-top: 29rem;
+    overflow: hidden;
+  }
 
   &__content {
     position: relative;
-    margin-top: 24rem;
     flex:1;
-    overflow: hidden;
     padding-left: 31.6667rem;
     display: flex;
     
@@ -60,13 +65,18 @@
     
   }
 
+  $dim_vid_w: 200%;
+  $dim_vid_h: 140%;
+  $left_vid: -30rem;
+  $top_vid: -8rem;
+
   &__background {
     position: absolute;
     object-fit: cover;
-    left:-40%;
-    top:0;
-    width: 140%;
-    height: 130%;
+    left:$left_vid;
+    top:$top_vid;
+    width: $dim_vid_w;
+    height: $dim_vid_h;
     z-index: 2;
 
     &__container {
@@ -75,16 +85,86 @@
       $dim: 50rem;
       width:$dim;
       height: $dim;
-      flex:1;
       &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: -40%;
-        width: 140%;
-        height: 130%;
-        background: radial-gradient(circle, #0000 38%, #000 53%);
+        top: $top_vid;
+        left: $left_vid;
+        width: $dim_vid_w;
+        height: $dim_vid_h;
+        background: radial-gradient(#0000 40%, #000 60%);
         z-index: 3;
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+    width: 100%;
+    height:33.0833rem;
+    background: #ffffff01;
+    backdrop-filter: blur(4px);
+    z-index: 5;
+    padding-top:7.0000rem;
+    .divider {
+      opacity: 0.5;
+      width: 100%;
+      height: 1px;
+      background: var(--gradient-divider)
+    }
+    &__content {
+      display: flex;
+      margin-top: 3.9167rem;
+      padding: 0 22.1667rem;
+      &__container {
+        margin-right: 5.8333rem;
+        width: 30.5833rem;
+        h2 {
+          font-size: 2.3333rem;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.2500rem;
+          font-weight: 300;
+          color: #afafaf;
+          margin-top: 0.5rem;
+        }
+        &__links {
+          width: 14.8333rem;
+          margin-right: 3.3333rem;
+          ul {
+           //disable list style
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5000rem;
+            margin-top: 1rem;
+            
+            li {
+              font-size: 1.2500rem;
+              font-weight: 500;
+              color: #afafaf;
+              cursor: pointer;
+              transition: color 0.3s;
+              a {
+                text-decoration: none;
+                color: inherit;
+              }
+              &:hover {
+                color: white;
+              }
+            } 
+          }
+        }
+        &__contact {
+          margin-left:auto;
+          p {
+            font-size: 1.2500rem;
+            color: white;
+          }
+        }
+
       }
     }
   }
