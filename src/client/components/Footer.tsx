@@ -35,7 +35,7 @@ export default function Footer() {
 				</div>
 				<div className="footer__background__container">
 					<video className="footer__background" autoPlay loop muted>
-						<source src="/video/tva-timedoor-hd.mp4" type="video/mp4" />
+						<source src="/video/timedoor.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>

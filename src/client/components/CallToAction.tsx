@@ -10,6 +10,7 @@ export default function CallToAction({ text, onClick, style = 'big' }: CallToAct
 	return (
 		<div className={`cta-button ${style}`} onClick={onClick}>
 			<span>{text}</span>
+			<img src="/ui/go.svg" alt="Go" />
 		</div>
 	)
 }
