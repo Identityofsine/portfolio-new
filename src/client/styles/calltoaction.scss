@@ -1,0 +1,9 @@
+.cta-button {
+  border: 1.61px solid rgba(255,255,255, .07);
+  border-radius: 35px;
+  background: var(--bg);
+  &.big {
+    width:13.9167rem;
+    height: 3.3333rem;
+  }
+}

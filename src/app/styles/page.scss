@@ -10,5 +10,21 @@
   pointer-events: none;
   mix-blend-mode: hard-light;
   opacity: 0.15;
-  
+}
+
+.profile__hero {
+  position: relative;
+  display:flex;
+  gap: 1.7500rem;
+  max-width: var(--profile-card-width);
+  margin: 0 auto;
+  &__crossout {
+    position: absolute;
+    font-size: 0.8333rem;
+    bottom:0;
+    right:0;
+    color: var(--hidden-color);
+    z-index: 1;
+    text-decoration: line-through;
+  }
 }

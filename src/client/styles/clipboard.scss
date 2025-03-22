@@ -1,0 +1,9 @@
+.clipboard-action {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  user-select: none;
+  gap: 0.4167rem;
+  color: var(--clipboard-color);
+}

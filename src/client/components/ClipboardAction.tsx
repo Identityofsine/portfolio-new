@@ -1,3 +1,6 @@
+"use client";
+import "@/client/styles/clipboard.scss";
+
 type ClipboardAction = {
 	label: string;
 	data: string;

@@ -1,0 +1,91 @@
+.footer, footer {
+  position: relative;
+  background: var(--gradient-footer-bg);
+  min-height: 106.5833rem;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  width:100%;
+
+  &__content {
+    position: relative;
+    margin-top: 24rem;
+    flex:1;
+    overflow: hidden;
+    padding-left: 31.6667rem;
+    display: flex;
+    
+    &__container {
+      max-width: 53.9167rem;
+      padding-top: 8.3333rem;
+      position: relative;
+      z-index: 4;
+    }
+
+    &__subcontainer {
+      position: relative;
+      z-index: 1;
+      margin-top: 5.750rem;
+      &__title {
+        &__description {
+          color: var(--body-color-2);
+          font-weight: 300;
+          margin-top: 0.4167rem;
+          font-size: 1.4167rem;
+          text-align: center;
+          padding:0 .5rem;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 5.6667rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 1.8333rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6667rem;
+      font-size: 1.1667rem;
+      margin-top: 2rem;
+      color: var(--body-color-2);
+    }
+    
+  }
+
+  &__background {
+    position: absolute;
+    object-fit: cover;
+    left:-40%;
+    top:0;
+    width: 140%;
+    height: 130%;
+    z-index: 2;
+
+    &__container {
+      position: relative;
+      aspect-ratio: 1/1;
+      $dim: 50rem;
+      width:$dim;
+      height: $dim;
+      flex:1;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -40%;
+        width: 140%;
+        height: 130%;
+        background: radial-gradient(circle, #0000 38%, #000 53%);
+        z-index: 3;
+      }
+    }
+  }
+}

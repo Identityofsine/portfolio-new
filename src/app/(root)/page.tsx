@@ -1,10 +1,10 @@
-import ProfileCard from "@/client/components/ProfileCard";
 import "../styles/page.scss";
+import ProfileSection from "@/client/components/ProfileCard";
 
 export default function Home() {
 	return (
-		<div>
-			<ProfileCard />
+		<div className="home">
+			<ProfileSection />
 		</div>
 	);
 }
