@@ -1,0 +1,57 @@
+@use '@/app/styles/globals/stroke.scss' as *;
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.0000rem;
+  width: 100%;
+
+  .navbar__element {
+    display: flex;
+    position: relative;
+    height: 3.0833rem;
+    @include blurstroke(#00FF0001, 2px, 34px, #232623);
+    backdrop-filter: blur(10px);
+
+    &__content {
+      padding: 0.1500rem; 
+      gap: 0.3333rem;
+      display: flex;
+      flex-grow: 1;
+    }
+
+    &__glow {
+      z-index: -1;
+      position: absolute;
+      top: calc(3rem - 1.40rem);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2.2500rem;
+      height: .5rem;
+      background: white;
+      box-shadow: 0 3px 8px 2px #ffffffbf;
+      backdrop-filter: none;
+      border-top-right-radius: 17px;
+      border-top-left-radius: 17px;
+    }
+
+    &__option {
+      position: relative;
+      height: 100%;
+      width: 7.0833rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      border-radius: 53px;
+      &.active {
+        background: #FFFFFF0c;
+      }
+
+    }
+    
+  }
+
+}
+

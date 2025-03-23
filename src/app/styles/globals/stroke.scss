@@ -28,3 +28,35 @@
     
   }
 }
+
+@mixin blurstroke($bg, $width, $radius, $gradient: var(--stroke-1)) {
+  position: relative;
+  border: none;
+  background: transparent; // Keep the main element transparent
+  border-radius: $radius;
+  padding: $width; // Create padding to make space for the gradient border
+
+  // Create the gradient border using a pseudo-element
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $gradient;
+    border-radius: $radius; // Rounded edges for the gradient
+    z-index: 90;
+    padding: $width; // Create a slight padding to separate the gradient from the content
+    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    -webkit-mask-composite: destination-out;
+    mask-composite: subtract;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  // Background for the inner content (can be transparent to show the page behind)
+  background-clip: padding-box;
+  background: $bg;
+}

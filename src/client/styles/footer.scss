@@ -100,7 +100,7 @@
   &__bottom {
     position: relative;
     width: 100%;
-    height:33.0833rem;
+    padding-bottom: 5rem;
     background: #ffffff01;
     backdrop-filter: blur(4px);
     z-index: 5;
@@ -160,8 +160,14 @@
         &__contact {
           margin-left:auto;
           p {
+            width:95%;
             font-size: 1.2500rem;
             color: white;
+          }
+          a {
+            display: block;
+            margin-top: .5rem;
+            font-size: 1.2500rem;
           }
         }
 

@@ -1,5 +1,6 @@
 import '@/client/styles/footer.scss';
 import CallToAction from './CallToAction';
+import { BRAND_SETTINGS } from '@/app/brand.settings';
 
 export default function Footer() {
 	return (
@@ -65,8 +66,10 @@ export default function Footer() {
 						</div>
 						<div className="footer__bottom__content__container__contact">
 							<p>Mauris metus tortor, tristique sed lobortis et, venenatis non dolor !</p>
-							<a>
-								kevin@fofx.zip
+							<a href={`mailto:${BRAND_SETTINGS.contact.personal}`}>
+								<span>
+									{BRAND_SETTINGS.contact.personal}
+								</span>
 							</a>
 						</div>
 					</div>
