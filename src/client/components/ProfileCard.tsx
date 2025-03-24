@@ -1,5 +1,6 @@
 import '@/client/styles/profilecard.scss';
 import { ClipboardAction } from './ClipboardAction';
+import CallToAction from './CallToAction';
 
 
 export default function ProfileSection() {
@@ -62,6 +63,7 @@ export function ProfileIntroduction() {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tempor diam. Proin elementum velit venenatis sagittis lobortis. Praesent nulla augue, aliquet non metus quis, molestie viverra ex. Curabitur vel magna quis purus porta rutrum a eleifend enim. Phasellus quis tempus  elit. Mauris metus tortor, tristique sed lobortis et, venenatis non  dolor. Nunc commodo, justo id volutpat ullamcorper, massa odio commodo  ipsum, ut imperdiet tortor ante a augue.
 			</p>
 			<div className="profile-introduction__cta">
+				<CallToAction text="Let's Connect" style="small" />
 				<ClipboardAction label="applications@fofx.zip" data="applications@fofx.zip" />
 			</div>
 		</div>

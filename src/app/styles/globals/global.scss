@@ -1,3 +1,4 @@
+@use '@/app/styles/globals/breakpoints.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --bg: #1A1D1A;
@@ -25,7 +26,15 @@
   --gradient-divider: linear-gradient(90deg, #00000000 5%, #5A5A5A 25%, #282A28 76%, #00000000 95%);
 
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 18px;
+
+  @include media("<=LGdesktop") {
+    font-size: 12px;
+  }
+
+  @include media("<=MDLGdesktop") {
+    font-size: 14px;
+  }
 }
 
 body {

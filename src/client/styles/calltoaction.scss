@@ -8,10 +8,23 @@
   box-sizing: border-box;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 4.0833rem;
 
   span {
     font-weight:500;
+  }
+  &.small {
+    width: 8.5833rem;
+    height: 2.0833rem;
+    padding: 0.5833rem 0;
+    padding-right: 0.3333rem;
+    padding-left: 0.9167rem;
+    span {
+      font-size: 0.7500rem;
+    }
+    img {
+      width: 1.4167rem;
+      height: 1.4167rem;
+    }
   }
   &.big {
     width:13.9167rem;

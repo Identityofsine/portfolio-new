@@ -24,9 +24,8 @@ nav {
     &__glow {
       z-index: -1;
       position: absolute;
-      top: calc(3rem - 1.40rem);
-      left: 50%;
-      transform: translateX(-50%);
+      top: -.3rem;
+      left: 3.6915rem;
       width: 2.2500rem;
       height: .5rem;
       background: white;
@@ -34,6 +33,7 @@ nav {
       backdrop-filter: none;
       border-top-right-radius: 17px;
       border-top-left-radius: 17px;
+      transition: left 0.3s;
     }
 
     &__option {
@@ -45,8 +45,16 @@ nav {
       align-items: center;
       z-index: 1;
       border-radius: 53px;
+      user-select: none;
       &.active {
         background: #FFFFFF0c;
+        span {
+          color: #FFFFFF;
+        }
+      }
+      span {
+        font-size: 1.0833rem;
+        color: #696969;
       }
 
     }
