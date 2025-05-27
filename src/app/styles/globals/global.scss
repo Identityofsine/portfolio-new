@@ -1,4 +1,5 @@
 @use '@/app/styles/globals/breakpoints.scss' as *;
+@import "~@flaticon/flaticon-uicons/css/all/all";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --bg: #1A1D1A;
@@ -19,14 +20,15 @@
   --clipboard-color: #B9B9B9;
 
   //gradients
-  --gradient-stroke: linear-gradient(180deg, #232623 0%, #272A27 100%);
+  --gradient-stroke: linear-gradient(180deg, #232623 -25%, #272A27 100%);
   --gradient-stroke-avatar: linear-gradient(180deg, #2D302D, #272A27); 
   --gradient-stroke-button: linear-gradient(270deg, #879491, #BDC0BD); 
   --gradient-footer-bg: linear-gradient(180deg, #1A1D1A 9%, #000000 23%);
   --gradient-divider: linear-gradient(90deg, #00000000 5%, #5A5A5A 25%, #282A28 76%, #00000000 95%);
+  --gradient-divider-solid: linear-gradient(90deg, #5A5A5A -10%, #282A28 100%);
 
   font-family: 'DM Sans', sans-serif;
-  font-size: 18px;
+  font-size: 12px;
 
   @include media("<=LGdesktop") {
     font-size: 12px;

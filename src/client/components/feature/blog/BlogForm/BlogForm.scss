@@ -1,0 +1,17 @@
+.filter-bar {
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 0 0 0;
+}
+
+.file-tree-toggle {
+  i {
+    font-size: 17px;
+    line-height: 1;
+    transform: translateY(2.45px);
+  }
+  span {
+    font-size: 16px !important;
+    margin-left: 0.5rem;
+  }
+}

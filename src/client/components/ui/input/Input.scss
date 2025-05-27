@@ -1,0 +1,20 @@
+@use '@/app/styles/globals/shared.scss' as fx;
+
+
+.fx-input-container {
+
+  max-width: 338px;
+  flex-shrink: 0;
+  flex-grow: 1;
+
+  @include fx.stroke(var(--gradient-stroke-avatar), 2px, var(--bg), 9px);
+  input.fx-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 11px;
+    font-size: 1rem;
+    color: white;
+  }
+
+}

@@ -2,7 +2,7 @@ import '@/client/styles/aboutme.scss';
 
 export default function AboutMe() {
 	return (
-		<section className="about-me">
+		<section className="about__me">
 			<div className="about-me__content">
 				<h1 className="about-me__header">
 					About Me

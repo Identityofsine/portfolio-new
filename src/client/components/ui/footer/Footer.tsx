@@ -1,5 +1,5 @@
-import '@/client/styles/footer.scss';
-import CallToAction from './CallToAction';
+import './Footer.scss';
+import CallToAction from '../calltoaction/CallToAction';
 import { BRAND_SETTINGS } from '@/app/brand.settings';
 
 export default function Footer() {

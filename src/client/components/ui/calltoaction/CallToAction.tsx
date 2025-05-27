@@ -1,4 +1,4 @@
-import "@/client/styles/calltoaction.scss";
+import "./CallToAction.scss";
 
 type CallToActionProps = {
 	text: string;

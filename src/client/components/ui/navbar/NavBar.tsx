@@ -1,6 +1,6 @@
 'use client';
 
-import '@/client/styles/nav.scss';
+import './NavBar.scss';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 

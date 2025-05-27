@@ -1,6 +1,6 @@
 import '@/client/styles/profilecard.scss';
 import { ClipboardAction } from './ClipboardAction';
-import CallToAction from './CallToAction';
+import CallToAction from './ui/calltoaction/CallToAction';
 
 
 export default function ProfileSection() {

@@ -1,0 +1,30 @@
+@use '../_blog.scss';
+
+.blog-tag {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+
+  padding: 2px 8px;
+
+  background-color: var(--tag-background-color);
+  border-radius: 5px;
+
+  backdrop-filter: blur(3px);
+
+  transition: background-color 250ms;
+
+  span {
+    font-size: 12px;
+    color: var(--tag-text-color);
+  }
+
+  &:hover {
+    background-color: var(--tag-background-color-hover);
+    cursor: pointer;
+  }
+
+}
