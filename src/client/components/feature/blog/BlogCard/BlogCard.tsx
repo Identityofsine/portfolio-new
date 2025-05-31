@@ -1,22 +1,44 @@
-import Tag from '../Tag/Tag'
-import './BlogCard.scss'
+"use client";
 
-function BlogCard() {
-	return (
-		<div className="blog-card">
-			<div className="blog-card-image">
-				<img src="https://images.unsplash.com/photo-1607798748738-b15c40d33d57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Post" />
-			</div>
-			<div className="blog-card-content">
-				<h2>My Experience With Mimi</h2>
-				<div className="tag-line">
-					<Tag />
-				</div>
-				<p>Mimi, Bibi, Kuromi. How it all started... </p>
-			</div>
+import { Blog } from "@/api/interfaces/blog.interface";
+import TagElement from "../Tag/Tag";
+import "./BlogCard.scss";
 
-		</div>
-	)
+type BlogCardProps = {
+  blog: Blog;
+};
+
+function BlogCard({ blog }: BlogCardProps) {
+  function handleClick() {
+    // Handle click event, e.g., navigate to blog details page
+    window.location.href = `/blog/${blog.id}`;
+  }
+
+  function handleMiddleClick(event: React.MouseEvent) {
+    // Handle middle click event, e.g., open in a new tab
+    if (event.button === 1) {
+      window.open(`/blog/${blog.id}`, "_blank");
+    }
+  }
+
+  return (
+    <div
+      className="blog-card"
+      onClick={handleClick}
+      onAuxClick={handleMiddleClick}
+    >
+      <div className="blog-card-image">
+        <img src={blog.image} alt="Blog Post" />
+      </div>
+      <div className="blog-card-content">
+        <h2>{blog.title}</h2>
+        <div className="tag-line">
+          {blog.tags?.map((tag) => <TagElement key={tag.id} tag={tag} />)}
+        </div>
+        <p>{blog.content?.substring(0, 100) + "..."}</p>
+      </div>
+    </div>
+  );
 }
 
-export default BlogCard
+export default BlogCard;

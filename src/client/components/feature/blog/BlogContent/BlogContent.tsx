@@ -1,15 +1,19 @@
-import BlogCard from "../BlogCard/BlogCard"
-import './BlogContent.scss'
+import { Blog } from "@/api/interfaces/blog.interface";
+import BlogCard from "../BlogCard/BlogCard";
+import "./BlogContent.scss";
 
-function BlogContent() {
-	return (
-		<div className="blog-container">
-			<BlogCard />
-			<BlogCard />
-			<BlogCard />
-			<BlogCard />
-		</div>
-	)
+type BlogContent = {
+  blogs: Blog[];
+};
+
+function BlogContent({ blogs }: BlogContent) {
+  return (
+    <div className="blog-container">
+      {blogs.map((item) => (
+        <BlogCard key={item.id} blog={item} />
+      ))}
+    </div>
+  );
 }
 
-export default BlogContent
+export default BlogContent;
